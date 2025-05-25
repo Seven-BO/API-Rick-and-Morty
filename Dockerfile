@@ -10,6 +10,8 @@ COPY . .
 
 RUN npm run build -- --output-path=./dist --configuration=production
 
+RUN ls -la /app/dist
+
 FROM nginx:alpine
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
