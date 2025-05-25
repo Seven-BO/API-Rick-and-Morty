@@ -8,7 +8,7 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build -- --output-path=./dist --configuration=production
+RUN npm run build --configuration=production
 
 RUN ls -la /app/dist
 
